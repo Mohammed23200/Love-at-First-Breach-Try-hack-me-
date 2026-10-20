@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>عيد ميلاد سعيد يا ياسمين</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#fff4f2; --bg2:#ffe3e4; --ink:#4a1730; --soft:#7d4a5f; --rose:#c2325f; --gold:#b8862e; --card:rgba(255,255,255,.7); --line:rgba(194,50,95,.25);
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#1d0b17; --bg2:#35132a; --ink:#ffe9ee; --soft:#e2b6c4; --rose:#ff7a9f; --gold:#f0c36b; --card:rgba(255,255,255,.06); --line:rgba(255,122,159,.3);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#1d0b17; --bg2:#35132a; --ink:#ffe9ee; --soft:#e2b6c4; --rose:#ff7a9f; --gold:#f0c36b; --card:rgba(255,255,255,.06); --line:rgba(255,122,159,.3);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(120% 80% at 50% 0%,var(--bg2),var(--bg) 70%);background-color:var(--bg);color:var(--ink);font-family:"Cairo",system-ui,sans-serif;line-height:2;overflow-x:hidden}
+.petals{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.petals svg{position:absolute;top:-60px;width:34px;height:34px;opacity:.7;animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(115vh) rotate(360deg)}}
+main{position:relative;z-index:1;max-width:680px;margin:0 auto;padding:0 22px 64px}
+.hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.hero small{color:var(--soft);font-size:1.05rem}
+h1{font-family:"Aref Ruqaa",serif;font-weight:700;font-size:clamp(4.2rem,22vw,8.5rem);line-height:1.1;margin:.1em 0;color:var(--rose);text-shadow:0 0 40px var(--line)}
+.hero p{font-size:1.25rem;max-width:30ch;margin:0}
+.hint{margin-top:44px;color:var(--soft);font-size:.95rem;animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(8px)}}
+h2{font-family:"Aref Ruqaa",serif;font-size:2rem;color:var(--gold);margin:72px 0 18px;text-align:center}
+.story{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px 26px;backdrop-filter:blur(6px)}
+.story p{margin:.5em 0;font-size:1.1rem}
+.years{position:relative;margin:0;padding:0 28px 0 0;list-style:none;border-right:2px solid var(--line)}
+.years li{position:relative;padding:6px 0 26px}
+.years li::before{content:"";position:absolute;right:-37px;top:16px;width:14px;height:14px;border-radius:50%;background:var(--rose);box-shadow:0 0 0 5px var(--line)}
+.years b{display:block;font-family:"Aref Ruqaa",serif;font-size:1.35rem;color:var(--rose)}
+.years span{color:var(--soft)}
+.gift{text-align:center;margin-top:70px}
+button{font:inherit;font-weight:600;font-size:1.15rem;color:#fff;background:linear-gradient(135deg,#d63c6c,#a8264f);border:0;border-radius:999px;padding:14px 34px;cursor:pointer;box-shadow:0 10px 30px var(--line);transition:transform .2s}
+button:hover{transform:scale(1.05)}
+button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+.letter{max-height:0;overflow:hidden;opacity:0;transition:max-height 1.2s ease,opacity 1s ease;margin-top:0}
+.letter.open{max-height:1600px;opacity:1;margin-top:34px}
+.letter div{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px 26px;text-align:right}
+.letter p{margin:.6em 0;font-size:1.12rem}
+.letter .sig{text-align:left;font-family:"Aref Ruqaa",serif;font-size:1.5rem;color:var(--rose);margin-top:1.2em}
+.big{font-family:"Aref Ruqaa",serif;font-size:clamp(1.9rem,8vw,2.8rem);text-align:center;color:var(--rose);margin:36px 0 0;line-height:1.5}
+@media (prefers-reduced-motion:reduce){.petals svg,.hint{animation:none}.letter{transition:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="j" viewBox="-50 -50 100 100">
+    <g fill="#fffaf6" stroke="#e7c9b8" stroke-width="1.5">
+      <ellipse cx="0" cy="-26" rx="11" ry="25"/>
+      <ellipse cx="0" cy="-26" rx="11" ry="25" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-26" rx="11" ry="25" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-26" rx="11" ry="25" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-26" rx="11" ry="25" transform="rotate(288)"/>
+    </g>
+    <circle r="6" fill="#f0c36b"/>
+  </symbol>
+</svg>
+<div class="petals" id="petals" aria-hidden="true"></div>
+
+<main>
+  <section class="hero">
+    <small>النهاردة يومك إنتي</small>
+    <h1>ياسمين</h1>
+    <p>كل سنة وإنتي حبيبتي وأحلى حاجة في حياتي</p>
+    <div class="hint">انزلي تحت، عندي حاجة ليكي ↓</div>
+  </section>
+
+  <h2>حكايتنا</h2>
+  <div class="story">
+    <p>بدأت الحكاية وأنا بشرحلك وإنتي بتسمعي، وكنتي بتقوليلي “أستاذ”.</p>
+    <p>ماكنتش أعرف إن الطالبة اللي قدامي هي اللي هتعلّمني يعني إيه حب.</p>
+  </div>
+
+  <h2>أربع سنين</h2>
+  <ol class="years">
+    <li><b>السنة الأولى</b><span>أستاذ وطالبة، ومعاد الدرس بقى أحلى معاد في يومي.</span></li>
+    <li><b>السنة التانية</b><span>اتحول الاهتمام لحب، وإحنا لسه مش واخدين بالنا.</span></li>
+    <li><b>السنة التالتة</b><span>بقينا بنكمّل جُمل بعض، وبقيتي بيتي وأماني.</span></li>
+    <li><b>السنة الرابعة</b><span>وكل يوم بحبك أكتر من اللي قبله، وعمري ما زهقت.</span></li>
+  </ol>
+
+  <div class="gift">
+    <button id="open" aria-expanded="false" aria-controls="letter">افتحي رسالتي ليكي</button>
+    <div class="letter" id="letter">
+      <div>
+        <p>ياسمين حبيبتي،</p>
+        <p>النهاردة عيد ميلادك، ومهما كتبت عمري ما هلاقي كلام يوصف إنتي إيه في حياتي.</p>
+        <p>إنتي الوحيدة اللي حبيتها بجد، ومن ساعة ما دخلتي حياتي كل حاجة بقت أهدى وأحلى وليها معنى.</p>
+        <p>شكراً إنك صبرتي عليا، وضحكتي معايا، وفضلتي جنبي في كل يوم. أربع سنين، وحبنا كل سنة بيكبر، وأنا لسه حاسس إننا في أول الطريق.</p>
+        <p>نفسي السنة دي تحققي كل اللي بتحلمي بيه، وتضحكي من قلبك كل يوم، وأكون أنا السبب في نص الضحك ده على الأقل.</p>
+        <p>وعد مني، إني هفضل أحبك وأحميكي وأفرّحك، حتى لو بقيتي إنتي الأستاذة وأنا الطالب.</p>
+        <p class="sig">بحبك يا ياسمين ♥<br>حبيبك</p>
+      </div>
+      <p class="big">كل سنة وإنتي طيبة يا أجمل ياسمينة</p>
+    </div>
+  </div>
+</main>
+
+<script>
+(function(){
+  var box=document.getElementById('petals');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function petal(delay){
+    var s=document.createElementNS('http://www.w3.org/2000/svg','svg');
+    var u=document.createElementNS('http://www.w3.org/2000/svg','use');
+    u.setAttribute('href','#j'); s.appendChild(u);
+    var size=18+Math.random()*26;
+    s.style.cssText='width:'+size+'px;height:'+size+'px;left:'+(Math.random()*100)+'%;animation-duration:'+(9+Math.random()*10)+'s;animation-delay:'+delay+'s';
+    box.appendChild(s);
+  }
+  if(!reduce){ for(var i=0;i<14;i++) petal(-Math.random()*12); }
+  var btn=document.getElementById('open'), letter=document.getElementById('letter');
+  btn.addEventListener('click',function(){
+    var open=letter.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open);
+    btn.textContent=open?'اقفلي الرسالة':'افتحي رسالتي ليكي';
+    if(open){
+      if(!reduce){ for(var i=0;i<12;i++) petal(Math.random()*2); }
+      setTimeout(function(){letter.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});},150);
+    }
+  });
+})();
+</script>
+</body>
+</html>
